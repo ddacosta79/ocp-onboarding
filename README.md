@@ -10,5 +10,5 @@ The Jenkins Pipeline provides :
 
 
 ## Prerequisites
-* the Jenkins service account needs to permissions to create and edit Openshift projects
-* the Jenkins instance needs openshift plugin (OpenShift Client Jenkins Plugin)
+* The Jenkins service account needs permissions to create and edit Openshift projects
+* The Jenkins instance needs openshift plugin (OpenShift Client Jenkins Plugin)
