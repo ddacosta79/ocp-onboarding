@@ -1,5 +1,10 @@
 # Red Hat Openshift Projects Onboarding
 
+
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [JenkinsServiceAccountRoleSetup](#jenkins-service-account-role-setup)
+
 ## Overview
 The goal of this repo is to provide Openshift Project Onboarding automation with a Jenkins Pipeline. 
 
@@ -15,3 +20,6 @@ The Jenkins Pipeline provides :
 * The Jenkins instance needs openshift plugin [OpenShift Client Jenkins Plugin](https://github.com/jenkinsci/openshift-client-plugin/blob/master/README.md)
 * Openshift User Groups.
 
+## Jenkins Service Account Role Setup
+1. Create the custom cluster role with a the sample yaml file: [custom cluster role](https://github.com/ddacosta79/ocp-onboarding/tree/master/files/cluster-role.yaml)
+2. Create the the role binding: [role binding](https://github.com/ddacosta79/ocp-onboarding/tree/master/files/role-binding.yaml)
