@@ -1,0 +1,25 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: jenkins-project-editor
+subjects:
+  - kind: ServiceAccount
+    name: jenkins
+    namespace: jenkins
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-project-editor
+--
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: self-provisioner
+subjects:
+  - kind: ServiceAccount
+    name: jenkins
+    namespace: jenkins
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: self-provisioner
